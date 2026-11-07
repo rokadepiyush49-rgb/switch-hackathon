@@ -1,0 +1,247 @@
+1
+00:00:00,800 --> 00:00:03,580
+Every great startup begins with an idea.
+
+2
+00:00:04,110 --> 00:00:07,190
+But an idea alone doesn't build a successful company.
+
+3
+00:00:07,870 --> 00:00:11,547
+Behind every successful business are hundreds of decisions
+
+4
+00:00:11,547 --> 00:00:15,225
+involving market research, financial planning, technology,
+
+5
+00:00:15,225 --> 00:00:17,000
+competition and regulations.
+
+6
+00:00:17,540 --> 00:00:20,036
+But what happens when you're a solo founder?
+
+7
+00:00:20,036 --> 00:00:23,270
+Or a small team without access to experienced executives?
+
+8
+00:00:23,760 --> 00:00:26,028
+You might build something nobody needs,
+
+9
+00:00:26,028 --> 00:00:28,820
+enter a market already dominated by competitors,
+
+10
+00:00:29,290 --> 00:00:32,437
+or overlook regulations that could prevent your business
+
+11
+00:00:32,437 --> 00:00:33,280
+from operating.
+
+12
+00:00:33,900 --> 00:00:36,938
+We believe founders shouldn't have to figure everything
+
+13
+00:00:36,938 --> 00:00:37,490
+out alone.
+
+14
+00:00:38,290 --> 00:00:41,716
+What if you could bring together a CEO, CFO, CTO,
+
+15
+00:00:41,716 --> 00:00:44,304
+CMO and other specialised executives,
+
+16
+00:00:44,304 --> 00:00:47,730
+without actually hiring an entire executive team?
+
+17
+00:00:48,270 --> 00:00:50,044
+That's why we built EXECORA:
+
+18
+00:00:50,044 --> 00:00:53,339
+an AI-powered virtual boardroom where specialised AI
+
+19
+00:00:53,339 --> 00:00:55,811
+agents and human teammates collaborate,
+
+20
+00:00:55,811 --> 00:00:59,169
+debate business ideas, challenge assumptions and help
+
+21
+00:00:59,169 --> 00:01:01,260
+founders make informed decisions.
+
+22
+00:01:01,900 --> 00:01:04,547
+And the collaboration happens through Switch,
+
+23
+00:01:04,547 --> 00:01:07,489
+bringing human teammates and specialised AI agents
+
+24
+00:01:07,489 --> 00:01:09,430
+together in one shared workspace.
+
+25
+00:01:10,000 --> 00:01:11,660
+Let's step inside our boardroom.
+
+26
+00:01:12,200 --> 00:01:14,370
+Welcome to the EXECORA boardroom.
+
+27
+00:01:15,100 --> 00:01:18,168
+Here, every agent has a specialised executive
+
+28
+00:01:18,168 --> 00:01:19,190
+responsibility.
+
+29
+00:01:19,700 --> 00:01:22,932
+Our CEO leads the strategic discussion and coordinates
+
+30
+00:01:22,932 --> 00:01:23,530
+decisions.
+
+31
+00:01:24,000 --> 00:01:27,085
+Our market research agent investigates customer demand,
+
+32
+00:01:27,085 --> 00:01:28,880
+industry trends and competitors.
+
+33
+00:01:29,370 --> 00:01:31,861
+Our CFO evaluates financial viability,
+
+34
+00:01:31,861 --> 00:01:34,090
+costs and business sustainability.
+
+35
+00:01:34,570 --> 00:01:37,145
+Our CTO examines technical feasibility,
+
+36
+00:01:37,145 --> 00:01:39,060
+architecture and scalability.
+
+37
+00:01:39,440 --> 00:01:42,066
+And our CMO focuses on marketing strategy,
+
+38
+00:01:42,066 --> 00:01:44,380
+positioning and customer acquisition.
+
+39
+00:01:44,910 --> 00:01:47,800
+Together, they form a virtual executive team.
+
+40
+00:01:48,400 --> 00:01:50,341
+Every question opens a thread,
+
+41
+00:01:50,341 --> 00:01:52,930
+and that's where the AI agents interact.
+
+42
+00:01:53,600 --> 00:01:56,584
+These agents don't simply generate isolated responses.
+
+43
+00:01:56,584 --> 00:01:59,015
+They collaborate in one shared conversation,
+
+44
+00:01:59,015 --> 00:02:01,999
+challenge each other's assumptions and bring different
+
+45
+00:02:01,999 --> 00:02:04,320
+perspectives to the same business problem.
+
+46
+00:02:04,810 --> 00:02:06,997
+And founders can actively participate,
+
+47
+00:02:06,997 --> 00:02:09,760
+question the agents and influence the decisions.
+
+48
+00:02:10,400 --> 00:02:13,949
+Under the hood, Switch Console runs every executive as its
+
+49
+00:02:13,949 --> 00:02:17,071
+own live agent. Each role, and the shared boardroom
+
+50
+00:02:17,071 --> 00:02:20,253
+protocol, lives on GitHub, so anyone can rebuild the
+
+51
+00:02:20,253 --> 00:02:20,620
+board.
+
+52
+00:02:21,570 --> 00:02:24,110
+Every meeting ends with a decision you can act on:
+
+53
+00:02:24,510 --> 00:02:25,550
+a board resolution.
+
+54
+00:02:26,250 --> 00:02:28,500
+And next, from our own board's roadmap:
+
+55
+00:02:28,870 --> 00:02:31,434
+debates grounded in your company data,
+
+56
+00:02:31,434 --> 00:02:35,280
+finance and CRM connectors, and a saved decision history.
+
+57
+00:02:35,900 --> 00:02:39,173
+We believe access to strategic expertise shouldn't depend
+
+58
+00:02:39,173 --> 00:02:41,700
+on the size of your company or your funding.
+
+59
+00:02:42,180 --> 00:02:45,448
+Whether you're a solo founder or an early-stage team,
+
+60
+00:02:45,448 --> 00:02:47,360
+your ideas deserve a boardroom.
+
+61
+00:02:48,000 --> 00:02:48,750
+EXECORA.
+
+62
+00:02:49,260 --> 00:02:52,700
+Think together. Decide smarter. Build bigger.
