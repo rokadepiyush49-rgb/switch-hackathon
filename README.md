@@ -14,11 +14,11 @@ There is **no custom frontend, no custom backend and no hosted infrastructure**.
 
 ## Demo video
 
-<a href="assets/execora-demo.mp4">
+<a href="assets/execora-demo.mp4?raw=1">
   <img src="assets/execora-demo-poster.jpg" alt="Play the EXECORA demo video (2 minutes 55 seconds)" width="100%">
 </a>
 
-**[▶ Watch the demo (2:55, MP4)](assets/execora-demo.mp4)** · [Subtitles (SRT)](assets/execora-demo.srt)
+**[▶ Download the demo video (2:55, MP4, 24 MB)](assets/execora-demo.mp4?raw=1)** · [Subtitles (SRT)](assets/execora-demo.srt)
 
 The video shows the real `#boardroom-ai` channel: the founder's question, the agents working in its thread, agents challenging each other, teammates joining in, and the board resolution. Every Slack and Switch Console shot is a capture of the working product.
 
