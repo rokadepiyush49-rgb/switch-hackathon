@@ -48,6 +48,59 @@ flowchart LR
 4. Each woken agent reads the room with Switch's `read_context` tool, then replies with `post_message`. Its reply appears in Slack under its own name, marked as an agent. When it needs a specific colleague to act, it uses `send_targeted_message` or an @mention.
 5. The CEO Agent opens the meeting, chairs it and closes it with a board resolution.
 
+### Who hears a message
+
+Switch decides, for every message in the channel, which agents wake up. This is what keeps the room free of duplicate replies and runaway agent loops.
+
+```mermaid
+flowchart TD
+  M["New message in the boardroom channel"] --> C{"Starts with an exclamation mark?<br/>e.g. !agents-status"}
+  C -- yes --> CMD["Switch room command<br/>EXECORA answers in a thread"]
+  C -- no --> W{"Mentions an agent?<br/>e.g. @cfo-agent"}
+  W -- yes --> MA["Only the mentioned agents wake up"]
+  W -- no --> H{"Sent by a human?"}
+  H -- yes --> CEO["Goes to the main agent, ceo-agent<br/>set with !assign-agent"]
+  H -- no --> N["Nobody wakes up<br/>agents cannot trigger each other by accident"]
+```
+
+### A meeting, step by step
+
+```mermaid
+sequenceDiagram
+  autonumber
+  actor F as Founder
+  actor T as Teammate
+  participant S as Slack and Switch
+  participant CEO as ceo-agent
+  participant MR as market-research-agent
+  participant CTO as cto-agent
+  participant CFO as cfo-agent
+  F->>S: @ceo-agent New idea for the board
+  S->>CEO: delivered by mention
+  CEO->>S: Opportunity assessment, then convenes MR, CTO and CFO with one question each
+  par Independent analysis
+    S->>MR: CEO's question
+    MR->>S: Customers, competitors, market size
+  and
+    S->>CTO: CEO's question
+    CTO->>S: MVP scope, architecture, cost to build
+  and
+    S->>CFO: CEO's question
+    CFO->>S: Who pays, unit economics, runway
+  end
+  T->>S: @cfo-agent @market-research-agent a hard question
+  S->>CFO: delivered by mention
+  S->>MR: delivered by mention
+  CFO->>S: Answers the teammate, ends with Challenge → @another-agent
+  MR->>S: Answers the teammate, ends with Challenge → @another-agent
+  Note over S: Each challenged agent is woken once
+  S-->>CTO: challenge (example)
+  CTO->>S: Response to challenge, with no mentions, so the debate stops here
+  F->>S: @ceo-agent close the meeting
+  S->>CEO: delivered by mention
+  CEO->>S: EXECORA Board Resolution
+```
+
 ## Why Switch
 
 - **Agents are real participants.** Each executive is a separate long-running Claude session with its own role and memory of the discussion, not one model pretending to be seven.
@@ -75,6 +128,21 @@ Each agent's full instructions are in [`switch/agents/`](switch/agents/): a role
 - **Debate by design.** When an agent answers a human's question, it must end with one `Challenge → @agent` aimed at another executive's weakest assumption. The challenged agent replies once (`Response to challenge —`) without mentioning anyone, and the CEO settles what is left. This keeps debate real and bounded, with no infinite agent loops.
 - **No noise.** No broadcast @mentions, no "standing by" acknowledgements, at most one agent mention per post (only the CEO, when convening, mentions several).
 - **Humans first.** A founder's or teammate's question is answered in the first line.
+
+Every time Switch wakes an agent, it follows the same turn:
+
+```mermaid
+flowchart LR
+  A["Woken by Switch<br/>mention or main-agent rule"] --> B["read_context<br/>the idea and everything the board said"]
+  B --> C{"Anything new to add?"}
+  C -- no --> X["Stays silent"]
+  C -- yes --> D["post_message<br/>analysis from its own role"]
+  D --> E["Ends with Biggest risk,<br/>Missing information and Verdict"]
+  E --> F{"Answering a human<br/>after others have posted?"}
+  F -- yes --> G["Adds one Challenge → @agent"]
+  F -- no --> H["Turn ends"]
+  G --> H
+```
 
 ## How humans take part
 
