@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/execora-logo.png" alt="EXECORA logo: Think together. Decide smarter. Build bigger." width="760">
+</p>
+
 # EXECORA: an AI boardroom that lives in Slack
 
 EXECORA gives a founder a full executive board in a Slack channel. You post a startup idea in `#boardroom-ai`. A CEO, a market researcher, a CTO, a CFO and other AI executives analyse it from their own angle, challenge one another's assumptions, take questions from your human teammates, and end with a board resolution you can act on.
@@ -7,6 +11,16 @@ There is **no custom frontend, no custom backend and no hosted infrastructure**.
 - **Slack**: the shared room where humans and agents talk.
 - **Switch**: the agent collaboration layer. It runs the agents, bridges them into Slack and routes every message.
 - **Configuration**: the agent instructions and room settings in this repository.
+
+## Demo video
+
+<a href="assets/execora-demo.mp4?raw=1">
+  <img src="assets/execora-demo-poster.jpg" alt="Play the EXECORA demo video (2 minutes 55 seconds)" width="100%">
+</a>
+
+**[▶ Download the demo video (2:55, MP4, 24 MB)](assets/execora-demo.mp4?raw=1)** · [Subtitles (SRT)](assets/execora-demo.srt)
+
+The video shows the real `#boardroom-ai` channel: the founder's question, the agents working in its thread, agents challenging each other, teammates joining in, and the board resolution. Every Slack and Switch Console shot is a capture of the working product.
 
 ## The problem
 
@@ -246,4 +260,7 @@ switch/agents/                    paste-ready instructions for each Switch agent
 switch/agents/_boardroom-protocol.md   the shared rules every agent follows
 demo/DEMO-SCRIPT.md               the three-minute demo, message by message
 docs/AUDIT.md                     integration audit and end-to-end test evidence
+assets/execora-demo.mp4           the demo video, with subtitles in execora-demo.srt
+assets/execora-logo.png           logo banner (execora-mark.png is the square mark)
+assets/execora-thumbnail.jpg      project thumbnail for video and submission pages
 ```
